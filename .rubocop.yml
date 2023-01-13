@@ -1,0 +1,36 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - bin/**/*
+    - coverage/**/*
+    - db/**/*
+    - docs/**/*
+    - system/**/*
+    - tmp/**/*
+    - vendor/**/*
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - staging
+    - development
+    - test
+
+Style/Documentation:
+  Enabled: false
+
+# https://github.com/rswag/rswag/issues/138
+RSpec/EmptyExampleGroup:
+  Exclude:
+    - spec/requests/**/*
+RSpec/ScatteredSetup:
+  Exclude:
+    - spec/requests/**/*
+RSpec/VariableName:
+  Exclude:
+    - spec/requests/**/*

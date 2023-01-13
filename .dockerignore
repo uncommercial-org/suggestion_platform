@@ -1,0 +1,8 @@
+**/.git
+**/.idea
+/log/*
+/tmp/*
+/.dockerignore
+/.gitignore
+/.ruby-version
+/Dockerfile
